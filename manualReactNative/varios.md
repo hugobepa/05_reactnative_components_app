@@ -1,0 +1,43 @@
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+https://docs.expo.dev/versions/latest/sdk/safe-area-context/ (import { SafeAreaView } from 'react-native-safe-area-context';)
+
+#NaveScreen
+#redirect( desde el index principal solo)
+
+import { Redirect } from "expo-router"
+
+return <Redirect href={'/(home)'}/>
+
+#links
+import { Link } from 'expo-router'
+return(
+
+<Link href={'/product'}>home</Link>
+ <Link href={'/'}>home</Link>
+
+#forwardRef- dprecrted
+https://react.dev/reference/react/forwardRef (decraped)
+https://react.dev/learn/manipulating-the-dom-with-refs
+
+#navegacion StackNavigation
+https://docs.expo.dev/router/advanced/stack/
+https://docs.expo.dev/router/advanced/tabs/
+https://docs.expo.dev/router/advanced/drawer/
+https://github.com/DevTalles-corp/expo-navigation-app/blob/fin-seccion-07/app/_layout.tsx
+https://reactnavigation.org/docs/drawer-navigator/
+
+#iconos
+https://lucide-animated.com/
+https://docs.expo.dev/guides/icons/
+https://ionic.io/ionicons
+
+https://www.npmjs.com/package/axios
+
+#tanstack
+https://tanstack.com/
+https://tanstack.com/query/latest
+https://tanstack.com/query/latest/docs/framework/react/quick-start
+
+https://www.youtube.com/watch?v=drtxWx1XojI (configuration format prettier en VS)
+
+https://docs.expo.dev/versions/latest/sdk/linear-gradient/
