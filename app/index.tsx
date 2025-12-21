@@ -1,12 +1,20 @@
+import { animationMenuRoutes } from "@/constants/Routes";
+import ThemedView from "@/presentation/shared/ThemedView";
+import { Href, Link } from "expo-router";
 import React from "react";
-import { Text, View } from "react-native";
+import { Text } from "react-native";
 
-const index = () => {
+const ComponentApp = () => {
   return (
-    <View>
-      <Text>Welcome to Index!</Text>
-    </View>
+    <ThemedView margin>
+      <Text className="mb-4">Welcome to Index!</Text>
+      {animationMenuRoutes.map((route, index) => (
+        <Link key={route.name} href={route.name.split("/")[0] as Href}>
+          {route.title}
+        </Link>
+      ))}
+    </ThemedView>
   );
 };
 
-export default index;
+export default ComponentApp;
