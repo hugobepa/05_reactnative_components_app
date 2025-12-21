@@ -21,7 +21,7 @@ const MenuItem = ({
   isFirst = false,
   isLast = false,
 }: Props) => {
-  const [routeName] = name.split("/");
+  //const [routeName] = name.split("/");
   const primaryColor = useThemeColor({}, "primary");
   return (
     <Pressable
