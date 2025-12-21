@@ -11,7 +11,7 @@ import { View } from "react-native";
 const ComponentApp = () => {
   return (
     <ThemedView margin>
-      <View className="my-5 ">
+      <View className="my-3 ">
         {animationMenuRoutes.map((route, index) => (
           <MenuItem
             key={route.name}
@@ -24,7 +24,7 @@ const ComponentApp = () => {
         ))}
       </View>
 
-      <View className="my-5 ">
+      <View className="my-3 ">
         {uiMenuRoutes.map((route, index) => (
           <MenuItem
             key={route.name}
@@ -37,7 +37,7 @@ const ComponentApp = () => {
         ))}
       </View>
 
-      <View className="my-5 ">
+      <View className="my-3 ">
         {menuRoutes.map((route, index) => (
           <MenuItem
             key={route.name}

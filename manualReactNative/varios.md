@@ -41,3 +41,6 @@ https://tanstack.com/query/latest/docs/framework/react/quick-start
 https://www.youtube.com/watch?v=drtxWx1XojI (configuration format prettier en VS)
 
 https://docs.expo.dev/versions/latest/sdk/linear-gradient/
+
+#animaciones
+https://reactnative.dev/docs/animated
