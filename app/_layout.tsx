@@ -5,9 +5,10 @@ import {
 } from "@react-navigation/native";
 
 import { useThemeColor } from "@/hooks/use-theme-color";
+import ThemedText from "@/presentation/shared/ThemedText";
 import ThemedView from "@/presentation/shared/ThemedView";
 import { Slot } from "expo-router";
-import { Text, useColorScheme } from "react-native";
+import { useColorScheme } from "react-native";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import "../global.css";
 
@@ -25,9 +26,7 @@ export default function RootLayout() {
     >
       <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
         <ThemedView margin>
-          <Text className="mt-20 text-xl font-bold text-light-primary">
-            Welcome to Layout!
-          </Text>
+          <ThemedText className="mt-20">Welcome to Layout!</ThemedText>
           <Slot />
         </ThemedView>
       </ThemeProvider>
