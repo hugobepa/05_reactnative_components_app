@@ -54,3 +54,4 @@ https://reactnative.dev/docs/animated
 https://reactnative.dev/docs/animatedvaluexy
 https://reactnative.dev/docs/switch
 https://reactnative.dev/docs/alert
+https://reactnative.dev/docs/textinput
