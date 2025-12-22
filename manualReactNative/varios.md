@@ -56,3 +56,5 @@ https://reactnative.dev/docs/switch
 https://reactnative.dev/docs/alert
 https://reactnative.dev/docs/textinput
 https://reactnative.dev/docs/keyboardavoidingview
+https://reactnative.dev/docs/refreshcontrol
+https://reactnative.dev/docs/sectionlist
