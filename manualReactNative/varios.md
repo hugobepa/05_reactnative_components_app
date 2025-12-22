@@ -58,3 +58,7 @@ https://reactnative.dev/docs/textinput
 https://reactnative.dev/docs/keyboardavoidingview
 https://reactnative.dev/docs/refreshcontrol
 https://reactnative.dev/docs/sectionlist
+
+#animacionesBotonesModal
+https://docs.expo.dev/tutorial/create-a-modal/
+https://docs.expo.dev/router/advanced/modals/ (recomendado)
