@@ -6,20 +6,10 @@ import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { Platform } from "react-native";
 
-const ModalScreen = () => {
+const ModalScreen2 = () => {
   return (
-    <ThemedView
-      className="justify-center items-center flex-1"
-      bgColor="#A52182"
-    >
-      <ThemedText>Hola, Soy un modal</ThemedText>
-
-      <ThemedButton
-        className="my-4"
-        onPress={() => router.push("/modal/modal-window-2")}
-      >
-        otro modal
-      </ThemedButton>
+    <ThemedView className="justify-center items-center flex-1">
+      <ThemedText>Hola, Soy otro modal2</ThemedText>
 
       <ThemedButton
         onPress={() => router.dismiss()} //router.back()
@@ -32,4 +22,4 @@ const ModalScreen = () => {
   );
 };
 
-export default ModalScreen;
+export default ModalScreen2;

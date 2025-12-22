@@ -9,6 +9,14 @@ const ModalLayout = () => {
         name="modal-window"
         options={{
           presentation: "modal",
+          //presentation: 'fullScreenModal',
+        }}
+      />
+      <Stack.Screen
+        name="modal-window-2"
+        options={{
+          presentation: "card",
+          //presentation: 'fullScreenModal',
         }}
       />
     </Stack>
