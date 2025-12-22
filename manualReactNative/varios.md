@@ -58,6 +58,8 @@ https://reactnative.dev/docs/textinput
 https://reactnative.dev/docs/keyboardavoidingview
 https://reactnative.dev/docs/refreshcontrol
 https://reactnative.dev/docs/sectionlist
+https://reactnative.dev/docs/flatlist
+https://reactnative.dev/docs/activityindicator
 
 #animacionesBotonesModal
 https://docs.expo.dev/tutorial/create-a-modal/
