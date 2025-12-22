@@ -42,6 +42,14 @@ https://www.youtube.com/watch?v=drtxWx1XojI (configuration format prettier en VS
 
 https://docs.expo.dev/versions/latest/sdk/linear-gradient/
 
+#VS settings cerrar comillas y brackest
+ctrl+ , o paletacontrol settings
+editor.autoClosingQuotes": "always"
+
+#profile ext VS
+https://www.youtube.com/watch?v=wnd-FJuHFuM
+
 #animacionesBotones
 https://reactnative.dev/docs/animated
 https://reactnative.dev/docs/animatedvaluexy
+https://reactnative.dev/docs/switch
