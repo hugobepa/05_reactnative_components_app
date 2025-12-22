@@ -55,3 +55,5 @@ https://reactnative.dev/docs/animatedvaluexy
 https://reactnative.dev/docs/switch
 https://reactnative.dev/docs/alert
 https://reactnative.dev/docs/textinput
+https://reactnative.dev/docs/keyboardavoidingview
+https://docs.expo.dev/versions/latest/sdk/safe-area-context/
