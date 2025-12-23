@@ -66,3 +66,9 @@ https://www.nativewind.dev/docs/api/use-color-scheme
 #animacionesBotonesModal
 https://docs.expo.dev/tutorial/create-a-modal/
 https://docs.expo.dev/router/advanced/modals/ (recomendado)
+
+#context
+https://react.dev/reference/react/createContext
+https://react.dev/learn/passing-data-deeply-with-context
+https://www.freecodecamp.org/espanol/news/como-usar-context-api-de-react-en-tus-proyectos/
+https://www.escuelafrontend.com/context-para-el-manejo-de-estado
