@@ -50,6 +50,7 @@ editor.autoClosingQuotes": "always"
 https://www.youtube.com/watch?v=wnd-FJuHFuM
 
 #animacionesBotones
+https://reactnative.dev/docs/image
 https://reactnative.dev/docs/animated
 https://reactnative.dev/docs/animatedvaluexy
 https://reactnative.dev/docs/switch
