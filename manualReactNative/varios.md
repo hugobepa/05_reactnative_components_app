@@ -63,6 +63,10 @@ https://reactnative.dev/docs/flatlist
 https://reactnative.dev/docs/activityindicator
 https://www.nativewind.dev/docs/api/use-color-scheme
 
+#guardar datos movil
+https://docs.expo.dev/develop/user-interface/store-data/
+https://react-native-async-storage.github.io/2.0/
+
 #animacionesBotonesModal
 https://docs.expo.dev/tutorial/create-a-modal/
 https://docs.expo.dev/router/advanced/modals/ (recomendado)

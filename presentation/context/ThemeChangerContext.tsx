@@ -1,31 +1,39 @@
+import { Colors } from "@/constants/Colors";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 import {
   DarkTheme,
   DefaultTheme,
   ThemeProvider,
 } from "@react-navigation/native";
 import { useColorScheme } from "nativewind";
-import { createContext, PropsWithChildren, useContext, useState } from "react";
+import {
+  createContext,
+  PropsWithChildren,
+  useContext,
+  useEffect,
+  useState,
+} from "react";
 
 interface ThemeChangerContextType {
   currentTheme: "light" | "dark";
   isSystemTheme: boolean;
 
+  bgColor: string;
+
   toggleTheme: () => void;
   setSystemTheme: () => void;
 }
 
-const ThemeChangerContext = createContext<ThemeChangerContextType>(
-  {} as ThemeChangerContextType
-);
+const ThemeChangerContext = createContext({} as ThemeChangerContextType);
 
-//custom hook para acceder al ThemeChangerContext
+// Custom Hook para acceder al ThemeChangerContext
 export const useThemeChangerContext = () => {
   const themeChanger = useContext(ThemeChangerContext);
 
   return themeChanger;
 };
 
-//Provider
+// Provider
 export const ThemeChangerProvider = ({ children }: PropsWithChildren) => {
   const { colorScheme, setColorScheme } = useColorScheme();
 
@@ -38,24 +46,43 @@ export const ThemeChangerProvider = ({ children }: PropsWithChildren) => {
       ? "dark"
       : "light";
 
+  const backgroundColor = isDarkMode
+    ? Colors.dark.background
+    : Colors.light.background;
+
+  useEffect(() => {
+    AsyncStorage.getItem("selected-theme").then((theme) => {
+      if (!theme) return;
+
+      setIsDarkMode(theme === "dark");
+      setIsSystemThemeEnabled(theme === "system");
+      setColorScheme(theme as "light" | "dark" | "system");
+    });
+  }, []);
+
   return (
     <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
       <ThemeChangerContext.Provider
         value={{
           currentTheme: currentTheme ?? "light",
           isSystemTheme: isSystemThemeEnabled,
+          bgColor: backgroundColor,
 
           toggleTheme: async () => {
             setIsDarkMode(!isDarkMode);
             setColorScheme(isDarkMode ? "light" : "dark");
             setIsSystemThemeEnabled(false);
 
-            //TODO: GUARDAR EN STORAGE
+            await AsyncStorage.setItem(
+              "selected-theme",
+              isDarkMode ? "light" : "dark"
+            );
           },
 
           setSystemTheme: async () => {
             setIsSystemThemeEnabled(true);
             setColorScheme("system");
+            await AsyncStorage.setItem("selected-theme", "system");
           },
         }}
       >
