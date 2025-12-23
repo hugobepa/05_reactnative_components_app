@@ -19,7 +19,7 @@ export default function RootLayout() {
   );
   const colorScheme = useColorScheme();
 
-  const titles = Object.values(allRoutes).map((route) => route.title);
+  //const titles = Object.values(allRoutes).map((route) => route.title);
 
   return (
     <GestureHandlerRootView
