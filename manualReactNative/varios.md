@@ -61,6 +61,7 @@ https://reactnative.dev/docs/refreshcontrol
 https://reactnative.dev/docs/sectionlist
 https://reactnative.dev/docs/flatlist
 https://reactnative.dev/docs/activityindicator
+https://www.nativewind.dev/docs/api/use-color-scheme
 
 #animacionesBotonesModal
 https://docs.expo.dev/tutorial/create-a-modal/
