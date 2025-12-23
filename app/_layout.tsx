@@ -19,6 +19,8 @@ export default function RootLayout() {
   );
   const colorScheme = useColorScheme();
 
+  const titles = Object.values(allRoutes).map((route) => route.title);
+
   return (
     <GestureHandlerRootView
       style={{ backgroundColor: backgroundColor, flex: 1 }}
@@ -44,6 +46,7 @@ export default function RootLayout() {
               name={route.title}
               options={{
                 title: route.title,
+                headerShown: !route.title.includes("Slides"),
               }}
             />
           ))}
